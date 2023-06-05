@@ -15,6 +15,20 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        BinarySearchTree newTree =new BinarySearchTree();
+        
+        newTree.insert(47);
+        newTree.insert(21);
+        newTree.insert(76);
+        newTree.insert(18);
+        newTree.insert(52);
+        newTree.insert(420);
+        
+        //Value Expected
+        newTree.insert(27);
+        System.out.println(newTree.getRoot().getLeft().getRight().getValue());
+        
+        
     }
     
 }
