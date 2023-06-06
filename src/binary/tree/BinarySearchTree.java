@@ -68,5 +68,29 @@ public class BinarySearchTree {
     
     }
     
+    public boolean contains(int value){
+        if(getRoot()==null) return false;
+        Node temp=getRoot();
+        while(temp!=null){
+            if(temp.getValue()>value){
+                temp=temp.getLeft();
+            }
+            else if(temp.getValue()<value){
+            
+                temp=temp.getRight();
+            }
+            
+            else if(temp.getValue()==value){
+                return true;
+            
+            }
+        
+        
+        }
+        return false;
+                
+    
+    }
+    
     
 }

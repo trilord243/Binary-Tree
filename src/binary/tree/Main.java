@@ -27,6 +27,7 @@ public class Main {
         //Value Expected
         newTree.insert(27);
         System.out.println(newTree.getRoot().getLeft().getRight().getValue());
+        System.out.println(newTree.contains(52));
         
         
     }
